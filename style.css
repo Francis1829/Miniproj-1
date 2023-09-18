@@ -93,6 +93,10 @@ nav{
     font-weight: 500;
     transition: .3s ease-in-out;
 }
+.title{
+    max-width: 1600px;
+    width: 100%;
+}
 .carousel-item img{
     object-fit: cover ;
     object-position: center;
@@ -481,6 +485,10 @@ footer{
     box-shadow: 0px -4px 10px 0px rgba(0,0,0,0.3);
 }
 
+.foot_2{
+    margin: 3rem;
+}
+
 footer h4{
     font-size: 20px;
 }
@@ -514,6 +522,10 @@ footer li:hover{
     .container{
         padding: 0;
     }
+    .carousel-item img{
+        width: 200%;
+    }
+
     .logoname{
         font-size: 20px;
     }
@@ -609,20 +621,24 @@ footer li:hover{
     }
 
     .bg-g{
-        height: 260px;
-        width: 250px;
+        height: 200px;
+        width: 180px;
         font-size: 18px;
-        line-height: 30px;
+        line-height: 15px;
         cursor: pointer;
     }
     .with-img img{
-        width: 120px;
+        width: 90px;
     }
 
     .with__{
         margin: 80px 2rem;
-        font-size: 25px;
-    }  
+        font-size: 20px;
+    } 
+    
+    .with_t{
+        font-size: 12px;
+    }
     
     .footer{
         flex-direction: column;
@@ -649,7 +665,7 @@ footer li:hover{
     }
 
     .foot_2{
-        margin: 20px;
+        margin: 10px;
     }
     .foot_1{
         margin: 0;
