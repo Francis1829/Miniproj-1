@@ -1,0 +1,661 @@
+@import url('https://fonts.cdnfonts.com/css/this-is-the-future');
+@import url('https://fonts.cdnfonts.com/css/goldana');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/walecriture');
+@import url('https://fonts.cdnfonts.com/css/gentium-basic');
+@import url('https://fonts.cdnfonts.com/css/nairi');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container{
+    max-width: 1300px;
+    width: 100%;
+    padding-inline: 1rem;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+/* navBar Css */
+nav{
+    position: fixed;
+    width: 100%;
+    background-image: linear-gradient(180deg,#061e30 -20%,rgba(255,255,255,0) 95%);
+    z-index: 150;
+    transition: .5s ease-in-out;
+}
+
+.logoname{
+    font-family: 'Walecriture', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 0 0 2px #000000, 0 0 2px #000000;
+    transition: all .3s ease-in-out;                                      
+}
+.logoname span{
+    background-color: #029c54;
+    border-radius: 5px;
+    padding-inline: 5px;
+}
+
+.scrolled{
+    box-shadow:  0px 5px 10px 0px rgba(0,0,0,0.3);
+    background: #fff;
+}
+
+.scrolled .nav2 li a{
+    color: black;
+}
+.scrolled .logoname{
+    color: #000;
+    text-shadow: 0 0 2px #ffffff, 0 0 2px #ffffff; 
+}
+.logo{
+    width: 150px;
+    height: 50px;
+}
+.line{
+    border-bottom: 1px solid rgba(124, 124, 124, 0.5); 
+    margin: 0 20px;
+}
+.btnn button{
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #029c54;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: .5s ease-in-out;
+}
+.scrolled .btnn button{
+    color: #000;
+}
+
+.btnn button:hover{
+    background-color: #029c54;
+    color: #fff;
+    transition: .2s ease-in-out;
+}
+.nav2 li a{
+    font-size: 18px;
+    text-decoration: none;
+    margin-inline: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    transition: .3s ease-in-out;
+}
+.carousel-item img{
+    object-fit: cover ;
+    object-position: center;
+}
+
+/* Intro heading Css */
+
+.intro_heading{
+    position: absolute;
+    width: 95%;
+    top: 140px;
+    left: 30px;
+    z-index: 10;
+    color: #fff;
+}
+.intro__heading, .search{
+    width: 40%;
+}
+
+.intro__heading span{
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 3px;
+    z-index: 99;
+}
+
+.intro__heading h1{
+    font-family: 'This Is The Future', sans-serif;
+    letter-spacing: 1px;
+    line-height: 4rem;
+    z-index: 99;                                         
+}
+
+.intro__heading p{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.905);
+}
+
+.intro__heading button{
+    width: 180px;
+    height: 40px;
+    background-color: #029c54;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+    transition: all .3s  ease-in-out;
+}
+
+.intro__heading button:hover{
+    background-color: rgba(6, 85, 48, 4);
+}
+
+.intro_img{
+    width: 400px;
+    height: 300px;
+    background-image: url(/Img/Capture.JPG);
+    -webkit-mask-image:
+    linear-gradient(to left, transparent 0%, black 3%, black 98%, transparent 100%);
+    border-radius: 20px;
+    opacity: .8 ;
+    mask-image: linear-gradient(to top, transparent 20%, black 100%);
+}
+
+.intro_img:hover{
+    opacity: 1;
+    transition: .3s ease-in-out;
+}
+
+.search_bar{
+    border-radius: 10px;
+    width: 350px;
+    height: 70px;
+    background-color: rgba(1, 183, 53, 0.3);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+    backdrop-filter: blur(16px);
+}
+
+.search__bar{
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 40px ;
+    width: 230px;
+    padding: 5px;
+}
+
+#Service{
+    outline: none;
+    padding-left: 5px;
+    border: 0   ;
+    resize: none;
+    border-right: 2px solid #029c54;
+}
+
+.search__bar textarea{
+    outline: none;
+    padding-left: 5px;
+    border: 0   ;
+    resize: none;
+}
+
+.search__bar i{
+    color: #807e86;
+    font-size: 20px;
+}
+
+/* Offers css */
+
+.offers__{
+    height: 280px;
+    width: 332px;
+    padding: 15px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+    border-radius: 20px;
+}
+
+.bx-swim{
+    width: fit-content;
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: rgba(91, 62, 254, 0.333) ;
+    color: rgb(92, 62, 254);
+    font-size: 40px;
+}
+
+.bx-hotel{
+    width: fit-content;
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: rgba(1, 165, 83, 0.333) ;
+    color: rgb(1, 165,83);
+    font-size: 40px;
+}
+
+.bx-home{
+    width: fit-content;
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: rgb(8, 137, 255, 0.2);
+    color: rgb(8, 137,255);
+    font-size: 40px;
+}
+
+.offers__ h2{
+    font-family: 'Goldana', sans-serif;
+    letter-spacing: 5px;
+}
+
+.offers h1{
+    margin-block: 50px;
+    font-family: 'This Is The Future', sans-serif;
+    letter-spacing: 5px;
+    color: rgba(2, 156, 84, 0.83);
+}
+
+/* recommendation css */
+
+.explo{
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: rgba(115, 115, 115, 0.922);
+    text-transform: uppercase;
+}
+
+.recom_-{
+    background-image: url(/Img/unnn.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 15px;
+    width: 400px;
+    height: 245px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+}
+
+.recom_1{
+    background-image: url(/Img/unnamed.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 15px;
+    width: 400px;
+    height: 245px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+}
+
+.recom_2{
+    background-image: url(/Img/JD.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 15px;
+    width: 400px;
+    height: 245px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+}
+
+
+.recom h1{
+    margin-block: 50px;
+    font-family: 'This Is The Future', sans-serif;
+    letter-spacing: 5px;
+    color: #029c54d4;
+}
+
+.recom_{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+.recom_:hover{
+    transform: scale(1.05);
+    transition: .3s ease-in-out;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0;
+}
+
+.recom_:hover .overlay{
+    opacity: .5;
+    transition: .3s ease-in-out;
+}
+.recom_:hover .recom-hide{
+    height: 120px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition: .4s ease-in-out;
+}
+.recom-hide{
+    height: 0;
+    opacity: 0;
+    font-size: 18px;
+    color: rgba(255,255,255,.7);
+    transform: translateY(20px);
+    z-index: 3;
+}
+.fade_{
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    background: linear-gradient(rgba(19, 23, 28, 0) 60%, rgba(19, 23, 28, 0.733) 80%, rgb(19, 23, 28) 90%);
+    z-index: 1;
+}
+
+.recom h2{
+    z-index: 99;
+    color: #fff;
+    font-family: 'Goldana', sans-serif;
+    letter-spacing: 3px;
+    margin: 0;
+    text-shadow: 0px 0px 10px #000;
+}
+.recom span{
+    z-index: 99;
+    color: rgba(213, 213, 213, 0.722);
+    text-shadow: 0px 0px 10px #000;
+    font-size: 18px;
+}
+
+/* Book Now css */
+.Book_{
+    background-image: linear-gradient(to bottom right, rgb(2, 156, 84), rgba(5, 92, 52, 0.937), rgb(2, 156, 84));
+    width: 100%;
+    height: 300px;
+    letter-spacing: 5px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+}
+
+.Book_ span{
+    font-size: 35px;
+    font-family: 'Goldana', sans-serif;
+    color: rgba(213, 213, 213, 0.456);
+}
+.Book_ h1{
+    font-family: 'This Is The Future', sans-serif; 
+    font-size: 30px;
+    color: #fff; 
+}
+
+.buts button{
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    margin-inline: 20px;
+}
+
+.buts .but1{
+    background-color: transparent;
+    border: 1px solid #fff;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff ;
+}
+
+.buts .but1:hover{
+    background-color: #fff;
+    color: #029c54;
+    border: 1px solid #fff;
+    transition: .3s ease-in-out;
+}
+
+
+.buts .but2{
+    background-color: #fff;
+    color: #029c54;
+    border: 1px solid #fff;
+    font-weight: 500;
+}
+.buts .but2:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: .3s ease-in-out;
+}
+/* Blog Css */
+.blog-img img{
+    border: 5px solid #029c54;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+}
+
+.blog-p p{ 
+    line-height: 150%;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #434343df;;
+}
+
+.blog-p p:nth-child(3){
+    text-align: end;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.about_{
+    font-family: 'This Is The Future', sans-serif; 
+    color: #029c54;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.about_p{
+    font-size: 18px;
+    letter-spacing: .5px;
+    margin-inline: 5rem;
+}
+
+.bg-g{
+    height: 320px;
+    width: 350px;
+    background-color: #039d56f5;
+    border-radius: 16px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+    padding: 40px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.with_us{
+    font-family: 'Nairi', sans-serif;
+}
+.with__{
+    margin: 80px 2rem;
+    font-size: 40px;
+    line-height: normal;
+}
+/* footer Css */
+footer{
+    background-color: #e9ebee;
+    box-shadow: 0px -4px 10px 0px rgba(0,0,0,0.3);
+}
+
+footer h4{
+    font-size: 20px;
+}
+
+footer li{
+    line-height: 25px;
+    font-size: 16px;
+}
+
+footer li:hover{
+    text-decoration: underline;
+}
+
+.foot_payment{
+    width: 250px;
+}
+
+.payment{
+    font-size: 20px;
+    font-weight: 500;
+}
+.foot_payment img{
+    margin-bottom: 8px;
+    margin-right: 5px;
+    border: 1px solid #807e86;
+}
+
+
+@media (max-width: 640px){
+
+    .container{
+        padding: 0;
+    }
+    .logoname{
+        font-size: 20px;
+    }
+    .nav2 li a{
+        font-size: 12px;
+    }
+
+    .btnn button{
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .intro__heading{
+        gap: .9rem;
+    }
+    .intro__heading h1{
+        letter-spacing: 0.8px;
+        line-height: 2rem;
+        z-index: 99;                                         
+    }
+    .intro__heading span{
+        font-size: 14px;
+        letter-spacing: 1px;
+        z-index: 99;
+    }
+    
+    .intro__heading p{
+        font-size: 14px;
+        text-transform: capitalize;
+        color: rgba(255, 255, 255, 0.905);
+    }
+    
+    .intro__heading button{
+        width: 110px;
+        height: 30px;
+    }
+
+    .intro_img{
+        width: 300px;
+        height: 200px;
+    }
+    
+    .search_bar{
+        width: 250px;
+        height: 40px;
+    }
+
+    .search__bar{
+        height: 25px ;
+        width: 180px;
+        padding: 5px;
+    }
+
+    .offers_{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        flex-direction: column;
+    }
+    .recom_--{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        flex-direction: column;
+    }
+
+    .Book_ span{
+        font-size: 25px;
+    }
+    .Book_ h1{
+        font-size: 16px;
+    }
+    
+    .buts button{
+        width: 110px;
+        height: 30px;
+    }
+
+    .blog-img img{
+       width: 170px;
+
+    }
+    
+    .blog-p p{ 
+        line-height: 90%;
+        letter-spacing: .3px;
+        font-size: 9px;
+    }
+
+    .about_p{
+        font-size: 14px;
+        margin-inline: .9rem;
+    }
+
+    .bg-g{
+        height: 260px;
+        width: 250px;
+        font-size: 18px;
+        line-height: 30px;
+        cursor: pointer;
+    }
+    .with-img img{
+        width: 120px;
+    }
+
+    .with__{
+        margin: 80px 2rem;
+        font-size: 25px;
+    }  
+    
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+    footer h4{
+        font-size: 15px;
+    }
+    
+    footer li{
+        line-height: 18px;
+        font-size: 16px;
+    }
+    
+    .foot_payment{
+        width: 250px;
+    }
+    
+    .payment{
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .foot_2{
+        margin: 20px;
+    }
+    .foot_1{
+        margin: 0;
+    }
+    .last_foot{
+        font-size: 15px;
+    }
+    
+}
