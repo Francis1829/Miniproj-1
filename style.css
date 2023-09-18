@@ -541,6 +541,9 @@ footer li:hover{
     .intro__heading{
         gap: .9rem;
     }
+    .intro_heading{
+        flex-direction: column;
+    }
     .intro__heading h1{
         letter-spacing: 0.8px;
         line-height: 2rem;
@@ -564,8 +567,7 @@ footer li:hover{
     }
 
     .intro_img{
-        width: 300px;
-        height: 200px;
+        display: none;
     }
     
     .search_bar{
