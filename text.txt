@@ -15,12 +15,12 @@ will create cherished memories of their visit."
                 </div>
                 <div class="offers__ d-flex flex-column justify-content-center align-items-center text-center m-4 gap-2">
                     <i class='bx bx-hotel' ></i>
-                    <h2>Resort</h2>
+                    <h2>Hotel</h2>
                     
                 </div>
                 <div class="offers__ d-flex flex-column justify-content-center align-items-center text-center m-4 gap-2">
                     <i class='bx bx-home'></i>
-                    <h2>Hotel</h2>
+                    <h2>Apartment</h2>
                 </div>
                 <div class="offers__ d-flex flex-column justify-content-center align-items-center text-center m-4 gap-2">
                     <i class='bx bx-hotel' ></i>
