@@ -213,9 +213,9 @@ nav{
 
 .offers__{
     height: 210px;
-    width: 200px;
-    padding: 15px;
-    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+    width: 190px;
+    padding: 30px;
+    box-shadow:0px 10px 40px #eee,0px 5px 10px rgba(66,71,76,.06),0px 0px 1px rgba(66,71,76,.48);
     border-radius: 20px;
     cursor: pointer;
 }
@@ -223,37 +223,41 @@ nav{
 .bx-swim{
     width: fit-content;
     border-radius: 50%;
-    padding: 1rem;
-    background-color: rgba(91, 62, 254, 0.333) ;
+    padding: .6rem;
+    background-color: rgba(91, 62, 254, 0.3) ;
     color: rgb(92, 62, 254);
-    font-size: 40px;
+    font-size: 25px;
+    border: 8px solid  rgba(255, 255, 255, 0.6) ;
 }
 
 .bx-hotel{
     width: fit-content;
     border-radius: 50%;
-    padding: 1rem;
-    background-color: rgba(1, 165, 83, 0.333) ;
+    padding: .6rem;
+    background-color: rgba(1, 165, 83, 0.3) ;
     color: rgb(1, 165,83);
-    font-size: 40px;
+    font-size: 25px;
+    border: 8px solid  rgba(255, 255, 255, 0.6) ;
 }
 
 .bx-home{
     width: fit-content;
     border-radius: 50%;
-    padding: 1rem;
-    background-color: rgb(8, 137, 255, 0.2);
+    padding: .6rem;
+    background-color: rgb(8, 137, 255, 0.3);
+    border: 8px solid  rgba(255, 255, 255, 0.6) ;
     color: rgb(8, 137,255);
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .ri-umbrella-line{
     width: fit-content;
     border-radius: 50%;
-    padding: 1rem;
-    background-color: rgb(255, 67, 73, 0.2);
+    padding: .6rem;
+    background-color: rgb(255, 67, 73, 0.3);
+    border: 8px solid  rgba(255, 255, 255, 0.6) ;
     color: rgb(255, 67, 73);
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 400;
     line-height: 1;
 }
@@ -261,16 +265,18 @@ nav{
 .ri-building-4-line{
     width: fit-content;
     border-radius: 50%;
-    padding: 1rem;
-    background-color: rgba(223, 83, 2, 0.2);
+    padding: .6rem;
+    background-color: rgba(223, 83, 2, 0.3);
+    border: 8px solid  rgba(255, 255, 255, 0.6) ;
     color: rgb(223, 83, 2);
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 400;
     line-height: 1;
 }
 
 .offers__ h2{
     font-family: 'Goldana', sans-serif;
+    font-size: 25px;
     letter-spacing: 5px;
 }
 
@@ -342,6 +348,20 @@ nav{
     overflow: hidden;
 }
 
+.bx-heart{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    opacity: 0;
+    z-index: 99;
+}
+.recom_:hover .bx-heart{
+    opacity: 1;
+    transform: scale(2.05);
+    transition: .5s ease-in-out;
+}
+
 
 .recom_:hover{
     transform: scale(1.05);
@@ -358,10 +378,6 @@ nav{
     right: 0;
     background-color: #000;
     opacity: 0;
-}
-
-.last_1{
-    width: 400px;
 }
 
 .recom_:hover .overlay{
